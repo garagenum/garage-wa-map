@@ -71,7 +71,17 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/gemioli.com\/yetisensation\/"
-                }],
+                },
+                {
+                    "name":"openWebsiteTrigger",
+                    "type":"string",
+                    "value":"onaction"
+                   }, 
+                   {
+                    "name":"openWebsiteTriggerMessage",
+                    "type":"string",
+                    "value":"Appuyer sur espace pour jouer au Yeti"
+                   }],
          "type":"tilelayer",
          "visible":true,
          "width":31,
