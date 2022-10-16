@@ -71,17 +71,17 @@
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/gemioli.com\/yetisensation\/"
-                },
+                }, 
                 {
-                    "name":"openWebsiteTrigger",
-                    "type":"string",
-                    "value":"onaction"
-                   }, 
-                   {
-                    "name":"openWebsiteTriggerMessage",
-                    "type":"string",
-                    "value":"Appuyer sur espace pour jouer au Yeti"
-                   }],
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
+                }, 
+                {
+                 "name":"openWebsiteTriggerMessage",
+                 "type":"string",
+                 "value":"Appuyer sur espace pour jouer au Yeti"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":31,
@@ -608,7 +608,7 @@
         }, 
         {
          "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1150, 1151, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 37, 38, 0, 0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0, 3612, 3612, 1150, 1151, 3612, 0, 3612, 3612, 3612, 3612, 0, 0, 0, 0, 3611, 3611, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 120, 110, 0, 0, 0, 0, 0, 0, 0, 91, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 0, 0, 0, 0, 0, 0, 0, 103, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 103, 0, 169, 0, 0, 0, 0, 0, 0, 0, 0,
             0, 1435, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -970,6 +970,32 @@
          "name":"WA-tree-trunk",
          "spacing":0,
          "tilecount":352,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":1,
+         "firstgid":3611,
+         "image":"src\/assets\/nextcloud_logo.png",
+         "imageheight":32,
+         "imagewidth":32,
+         "margin":0,
+         "name":"WA_nextcloud_logo",
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":1,
+         "firstgid":3612,
+         "image":"src\/assets\/Kanboard_logo.png",
+         "imageheight":32,
+         "imagewidth":32,
+         "margin":0,
+         "name":"WA_kanboard_logo",
+         "spacing":0,
+         "tilecount":1,
          "tileheight":32,
          "tilewidth":32
         }],
