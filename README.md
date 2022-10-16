@@ -1,11 +1,9 @@
-# WorkAdventure Map Starter Kit
 # GARAGE MAP
 
 ![map](./docs/map.png)
 
-This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
-
-To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
+Projet pour héberger la map du Garage numérique de workadventure disponible à l'adresse: https://adventure.legaragenumerique.fr
+Il s'appuie sur le projet https://github.com/thecodingmachine/workadventure-map-starter-kit
 
 ## Pré requis
 
@@ -13,27 +11,34 @@ To understand how to use this starter kit, follow the tutorial at [https://worka
 
 - npm (comes with [node](https://nodejs.org/en/))
 
+## Installation
+
+
+### Installation de Npm
+
 ```bash
 sudo apt install npm -y
 ```
 
-## Installation
+### Installation de Tiled (éditeur de map)
 
 - Ouvrir un terminal et copier les commandes suivantes:
 
 ```bash
-git clone https://github.com/GregLebreton/adventure-map.git
-cd adventure-map
-./install
+git clone https://github.com/garagenum/garage-wa-map.git
+cd garage-wa-map
+./install.sh
 source ~/.bashrc
 ```
 
 - Pour démarrer Tiled, entrer la commande suivante dans le terminal:
 ```
-tiled
+tiled map.json
 ```
 
-### Installation de Tiled (éditeur de map)
+## Utilisation
+
+Une fois la map éditée, taper la commande suivante pour démarrer le server:
 
 ```bash
 npm install
@@ -42,7 +47,7 @@ npm run start
 
 Le navigateur s'ouvre, choisir "tester la map"
 
-- A chaque modification sur la map, enregistrer (ctrl+s) et recharger la page du navigateur.
+> **_NOTE:_** A chaque modification sur la map, enregistrer (ctrl+s) et recharger la page du navigateur.
 
 ## Blocs
 
@@ -62,7 +67,6 @@ Un bloc est toujours rattaché à une layer d'affichage.
 - jitsi: Zone permettant de créer une visio conférence Jitsi
 - audio: Zone lançant une musique configurée dans les propriétés du bloc
 - misc: Todo
-
 
 ## Layers
 
@@ -96,6 +100,10 @@ Enfin, dans la fenêtre contextuelle, entrer un nom pour le nouveau jeu de tuile
 ## Ressources
 
 - https://opengameart.org/
+
+## Aide
+
+Pour tout renseignement supplémentaire sur cette map, ma contacter par email greg.lebreton@hotmail.com ou sur element.legaragenumerique.fr
 
 ## Licenses
 
