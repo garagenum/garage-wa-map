@@ -1,41 +1,101 @@
 # WorkAdventure Map Starter Kit
+# GARAGE MAP
 
-![map](./map.png)
+![map](./docs/map.png)
 
 This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
 
 To understand how to use this starter kit, follow the tutorial at [https://workadventu.re/map-building](https://workadventu.re/map-building).
 
-## Structure
-* **tilesets** : All tilesets
-* **public** : Static files
-* **src** : All TypeScript/Javascript scripts
-* **map.(json/tmj)** : Map file
-* **map.png** : Image displayed on README.md and on the map infos in-game
+## Pré requis
 
-If you want to use more than one map file, just add the new map file in the root folder, your tilesets in the assets folder and a new script if you need it in the src folder (it will be automaticaly optimized in production).
+- Tiled (https://www.mapeditor.org/)
 
-If you are going to create custom websites to embed in the map, please reference the HTML files in the `input` option in *vite.config.js*.
+- npm (comes with [node](https://nodejs.org/en/))
 
-## Requirements
-
-Node.js version >=16
+```bash
+sudo apt install npm -y
+```
 
 ## Installation
 
-With npm installed (comes with [node](https://nodejs.org/en/)), run the following commands into a terminal in the root directory of this project:
+- Ouvrir un terminal et copier les commandes suivantes:
 
-```shell
+```bash
+git clone https://github.com/GregLebreton/adventure-map.git
+cd adventure-map
+./install
+source ~/.bashrc
+```
+
+- Pour démarrer Tiled, entrer la commande suivante dans le terminal:
+```
+tiled
+```
+
+### Installation de Tiled (éditeur de map)
+
+```bash
 npm install
-npm run dev
+npm run start
 ```
 
-## Test optimized map
-You can test the optimized map as you do in production:
-```sh
-npm run build
-npm run preview
-```
+Le navigateur s'ouvre, choisir "tester la map"
+
+- A chaque modification sur la map, enregistrer (ctrl+s) et recharger la page du navigateur.
+
+## Blocs
+
+Les blocs (ou tiles pour tuile en anglais) vont afficher les textures choisies dans les jeux de tuiles sur la map.
+Un bloc est toujours rattaché à une layer d'affichage.
+- Les blocs spéciaux permettent de créer des intéractions sur les tuiles.
+
+![map](./docs/blocs.png)
+
+- start: Zone de spawn (départ) du woka (personnage) lors de la connexion.
+- block: Collider qui va physiquement créer les murs (empécher le woka de traverser les murs)
+- silent: Zone de silence qui bloquera les bulles de discution entre deux personnes
+- entry: Todo
+- exit: Zone permettant de définir une sortie vers une autre map
+- zone: Todo
+- url: Zone qui fera apparaitre une fenêtre d'un site web (à configurer dans les propriété du bloc)
+- jitsi: Zone permettant de créer une visio conférence Jitsi
+- audio: Zone lançant une musique configurée dans les propriétés du bloc
+- misc: Todo
+
+
+## Layers
+
+Les layers déterminent sur quelle profondeur s'affiche les tuiles.
+La hiérarchie des layers est la suivante:
+- La layer la plus en bas est derrière toutes les autres au dessus d'elle.
+- La layer la plus en haut s'affiche devant toutes les autres.
+
+![map](./docs/layers.png)
+
+## Propriétés personnalisées
+
+Il est possible d'ajouter des propriétés aux tuiles.
+exemple: Pour un bloc spécial "EXIT", il faudrat ajouter une propriété "exitUrl" de type string ou serat renseigner l'url de la map vers laquelle le bloc exit envoie.
+
+![map](./docs/props.png)
+
+## Ajout de tileset (jeu de tuiles)
+
+Pour ajouter des jeux de tuiles, il faut:
+- Ajouter l'image du jeu de tuile dans le dossier src/assets/
+- Importer via l'interface de Tiled dans la fenêtre à droite "jeux de Tuiles"
+- Cliquer sur l'icone "Nouveau Jeu de Tuiles"
+
+:warning: Une fois l'image ajouté dans src/assets et dans l'interface de la map dans Tiled, ne pas modifier son nom.
+
+![map](./docs/tileset.png)
+
+Enfin, dans la fenêtre contextuelle, entrer un nom pour le nouveau jeu de tuiles et naviguer jusqu'à l'image du jeu de tuile, puis cliquer sur OK
+
+## Ressources
+
+- https://opengameart.org/
 
 ## Licenses
 
