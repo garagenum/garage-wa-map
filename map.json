@@ -26,13 +26,23 @@
             0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":21,
          "id":52,
-         "name":"siteGarage",
+         "name":"SiteGarage",
          "opacity":1,
          "properties":[
                 {
                  "name":"openWebsite",
                  "type":"string",
                  "value":"https:\/\/www.legaragenumerique.fr"
+                }, 
+                {
+                 "name":"openWebsiteTrigger",
+                 "type":"string",
+                 "value":"onaction"
+                }, 
+                {
+                 "name":"openWebsiteTriggerMessage",
+                 "type":"string",
+                 "value":"Appuyer sur espace pour ouvrir le site du garage"
                 }],
          "type":"tilelayer",
          "visible":true,
