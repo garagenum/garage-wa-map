@@ -29,15 +29,15 @@ main {
 
 /* CUSTOM CSS */
 .divs {
-	position: relative;
+	position: absolute;
 }
 
 .images {
 	width:80%;
 	height:20%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    display: block;
+    margin: 0 auto;
+    border: 0;
 }
 /* CUSTOM CSS */
 
