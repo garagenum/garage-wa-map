@@ -27,6 +27,20 @@ main {
 	margin-bottom: 30px;
 }
 
+/* CUSTOM CSS */
+.divs {
+	position: relative;
+}
+
+.images {
+	width:80%;
+	height:20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* CUSTOM CSS */
+
 .socials img {
 	width: 30px;
 	height: 30px;
