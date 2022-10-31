@@ -28,9 +28,14 @@ main {
 	margin-bottom: 30px;
 }
 
+/* p {
+	text-decoration: white;
+} */
+
 /* CUSTOM CSS */
 .divs {
 	position: absolute;
+/*	text-decoration: white; */
 }
 
 .images {
