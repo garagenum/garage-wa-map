@@ -4,6 +4,7 @@ body {
 	max-width: 800px;
 	margin: auto !important;
 	text-align:center;
+	background-color: white;
 }
 h1, h2 {
     font-weight:bold;
