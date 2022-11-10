@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+    font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	max-width: 800px;
+	margin: auto !important;
+	text-align:center;
+	background-color: white;
+}
+        </style>
+        <script src="https://play.adventure.legaragenumerique.fr/iframe_api.js"></script>
+    </head>
+    <body>
+        <img id="images" src="./assets/logo-cnam.png">
+
+        <div id="divs">
+            <h1>Bienvenue sur la map du CNAM</h1>
+            <p>Ici vous pouvez chattez avec les membres du garage connectés, vous retrouver pour travailler à distance en visioconférence,
+                et accéder aux outils du garage en se référent aux différents logos expliqués ci-dessous.
+            </p>
+        </div>
+
+        <div id="divs">
+            <p><img src="./assets/icone-logo-garage.png" style="width: 64px;"> Pour faire apparaître une fenêtre nextcloud et partager des fichiers rejoindre cette icône: <img src="./assets/nextcloud_logo.png"> et appuyer sur espace</p>
+        </div>
+
+        <div id="divs">
+            <p><img src="./assets/icone-logo-garage.png" style="width: 64px;"> Pour faire apparaître la documentation du garage rejoindre une bibliothèque et appuyer sur espace</p>
+        </div>
+
+        <div id="divs">
+            <p><img src="./assets/icone-logo-garage.png" style="width: 64px;"> Pour rejoindre une visio conférence, se rendre à une table et appuyer sur espace</p>
+        </div>
+
+    </body>
+</html>
+
+<script>
+    WA.chat.sendChatMessage('Bonjour, Bienvenue sur map du CNAM!', 'Mr Robot');
+    WA.chat.sendChatMessage('Bonne journée!', 'Mr Robot');
+</script>
