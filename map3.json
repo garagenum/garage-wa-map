@@ -1098,13 +1098,18 @@
                 {
                  "name":"jitsiRoom",
                  "type":"string",
-                 "value":"MeetingRoom7"
+                 "value":"MeetingRoom10"
                 }, 
                 {
                  "name":"jitsiTrigger",
                  "type":"string",
                  "value":"onaction"
                 }, 
+                {
+                 "name":"jitsiUrl",
+                 "type":"string",
+                 "value":"jitsi.meet.legaragenumerique.fr"
+                },
                 {
                  "name":"jitsiTriggerMessage",
                  "type":"string",
